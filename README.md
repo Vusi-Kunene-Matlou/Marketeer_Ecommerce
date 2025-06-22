@@ -90,9 +90,6 @@ Password: Test@123
 ![Admin Login](images/adminlogin.png)
 
 ### 🔐 Admin Dashboard
-![Admin Dashboard](images/admindashboard.png)
-
-### 🔐 Admin Order Management
 ![Admin Dashboard](images/adminordermanagement.png)
 
 ### 🔐 Admin Approve sellers

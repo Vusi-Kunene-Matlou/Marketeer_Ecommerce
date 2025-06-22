@@ -59,54 +59,56 @@ Password: Test@123
 | **Server**   | Apache (XAMPP)                     |
 | **Hosting**  | InfinityFree                       |
 
----
 
 ## 🖼️ Screenshots
 
 > Place your screenshots inside an `images/` folder and update these links accordingly.
 
 ### 🏠 Home Page
-![Home Page](images/homepage.png)
+![Home Page](Downloads/images/homepage.png)
 
 ### 🏠 Landing Page
-![Landing Page](images/landingpagecustomers.png)
-![Landing Page](images/landingpagecustomers1.png)
-![Landing Page](images/landingpagecustomers2.png)
+![Landing Page](Downloads/images/landingpagecustomers.png)
+![Landing Page](Downloads/images/landingpagecustomers1.png)
+![Landing Page](Downloads/images/landingpagecustomers2.png)
 
 ## Customer side
-![Customer Side](images/checkout.png)
-![Customer Side](images/address.png)
-![Customer Side](images/customerlogin.png)
-![Customer Dashboard](images/address.png)
+![Customer Side](Downloads/images/checkout.png)
+![Customer Side](Downloads/images/address.png)
+![Customer Side](Downloads/images/customerlogin.png)
+![Customer Dashboard](Downloads/images/address.png)
 
 ## Order Trcak
-![Customer Side](images/ordertrack.png)
-![Customer Side](images/ordercomplete.png)
+![Customer Side](Downloads/images/ordertrack.png)
+![Customer Side](Downloads/images/ordercomplete.png)
 
 ## Payment
-![Customer Side](images/payement.png)
+![Customer Side](Downloads/images/payement.png)
 
 ### 🔐 Admin Login
-![Admin Login](images/adminlogin.png)
+![Admin Login](Downloads/images/adminlogin.png)
 
 ### 🔐 Admin Dashboard
-![Admin Dashboard](images/admindashboard.png)
+![Admin Dashboard](Downloads/images/admindashboard.png)
 
 ### 🔐 Admin Order Management
-![Admin Dashboard](images/adminordermanagement.png)
+![Admin Dashboard](Downloads/images/adminordermanagement.png)
 
 ### 🔐 Admin Approve sellers
-![Admin Dashboard](images/approvesellers.png)
+![Admin Dashboard](Downloads/images/approvesellers.png)
 
 ### 🔐 Admin Approved sellers
-![Admin Dashboard](images/approvedsellers.png)
+![Admin Dashboard](Downloads/images/approvedsellers.png)
 
 
 ### 🛍️ Seller Dashboard
-![Seller Dashboard](images/sellers.png)
-![Seller Dashboard](images/sellerslogin.png)
-![Seller Dashboard](images/sellersdashboard.png)
----
+![Seller Dashboard](Downloads/images/sellers.png)
+![Seller Dashboard](Downloads/images/sellerslogin.png)
+![Seller Dashboard](Downloads/images/sellersdashboard.png)
+
+### XAMPP CONFIGURATION
+![XAMPP CONFIGURATION](Downloads/images/xampp.png)
+
 
 ## ⚙️ Installation & Setup
 

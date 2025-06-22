@@ -7,7 +7,8 @@
 
 > A complete e-commerce solution built in PHP and MySQL featuring a **multi-vendor system** where sellers require admin approval. Hosted on InfinityFree.
 
-
+## View Demo
+![Marketeer Website](https://marketeer.42web.io/)
 
 ##  Project Overview
 
@@ -65,49 +66,49 @@ Password: Test@123
 > Place your screenshots inside an `images/` folder and update these links accordingly.
 
 ### 🏠 Home Page
-![Home Page](Downloads/images/homepage.png)
+![Home Page](images/homepage.png)
 
 ### 🏠 Landing Page
-![Landing Page](Downloads/images/landingpagecustomers.png)
-![Landing Page](Downloads/images/landingpagecustomers1.png)
-![Landing Page](Downloads/images/landingpagecustomers2.png)
+![Landing Page](images/landingpagecustomers.png)
+![Landing Page](images/landingpagecustomers1.png)
+![Landing Page](images/landingpagecustomers2.png)
 
 ## Customer side
-![Customer Side](Downloads/images/checkout.png)
-![Customer Side](Downloads/images/address.png)
-![Customer Side](Downloads/images/customerlogin.png)
-![Customer Dashboard](Downloads/images/address.png)
+![Customer Side](images/checkout.png)
+![Customer Side](images/address.png)
+![Customer Side](images/customerlogin.png)
+![Customer Dashboard](images/address.png)
 
 ## Order Trcak
-![Customer Side](Downloads/images/ordertrack.png)
-![Customer Side](Downloads/images/ordercomplete.png)
+![Customer Side](images/ordertrack.png)
+![Customer Side](images/ordercomplete.png)
 
 ## Payment
-![Customer Side](Downloads/images/payement.png)
+![Customer Side](images/payement.png)
 
 ### 🔐 Admin Login
-![Admin Login](Downloads/images/adminlogin.png)
+![Admin Login](images/adminlogin.png)
 
 ### 🔐 Admin Dashboard
-![Admin Dashboard](Downloads/images/admindashboard.png)
+![Admin Dashboard](images/admindashboard.png)
 
 ### 🔐 Admin Order Management
-![Admin Dashboard](Downloads/images/adminordermanagement.png)
+![Admin Dashboard](images/adminordermanagement.png)
 
 ### 🔐 Admin Approve sellers
-![Admin Dashboard](Downloads/images/approvesellers.png)
+![Admin Dashboard](images/approvesellers.png)
 
 ### 🔐 Admin Approved sellers
-![Admin Dashboard](Downloads/images/approvedsellers.png)
+![Admin Dashboard](images/approvedsellers.png)
 
 
 ### 🛍️ Seller Dashboard
-![Seller Dashboard](Downloads/images/sellers.png)
-![Seller Dashboard](Downloads/images/sellerslogin.png)
-![Seller Dashboard](Downloads/images/sellersdashboard.png)
+![Seller Dashboard](images/sellers.png)
+![Seller Dashboard](images/sellerslogin.png)
+![Seller Dashboard](images/sellersdashboard.png)
 
 ### XAMPP CONFIGURATION
-![XAMPP CONFIGURATION](Downloads/images/xampp.png)
+![XAMPP CONFIGURATION](images/xampp.png)
 
 
 ## ⚙️ Installation & Setup

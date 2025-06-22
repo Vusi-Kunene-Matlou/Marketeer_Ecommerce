@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Shop Buyer Protection Programme</title>
+    <link rel="stylesheet" href="your-styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-iM2P0d4q6f5zE5v5F9x2R4e8X3g9x9h6g5F2k4n7P6M8f8t6X7d2f9d6a3h3d7f9k8F7c6d6s8S4a7j5f3z+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* General Body and Container Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        /* Hero Section Styles */
+        .hero-section {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden; 
+        }
+        .hero-section .text-content {
+            z-index: 10;
+            position: relative;
+        }
+        /* No specific styling for .hero-section img as it's removed */
+
+        /* General Section Styles (How it works, What's covered, Secure payments) */
+        .how-it-works, .what-is-covered, .secure-payments {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        /* How it works Steps */
+        .how-it-works-steps {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .how-it-works-step {
+            flex: 1;
+            min-width: 280px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .step-number {
+            display: inline-block;
+            background-color: #ff6600; /* Orange color from the image */
+            color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Coverage Details and Store Coverage Lists */
+        .coverage-details, .store-coverage {
+            list-style: none;
+            padding: 0;
+        }
+        .coverage-details li, .store-coverage li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .coverage-details li:last-child, .store-coverage li:last-child {
+            border-bottom: none;
+        }
+
+        /* Secure Payments List (Custom Colored Bullets) */
+        .payment-methods-list-colored-bullets { 
+            list-style: none; /* Hides the default bullet points */
+            padding-left: 20px; /* Adjust as needed for overall indentation */
+            display: flex; /* Keeps the flexbox layout for wrapping */
+            flex-wrap: wrap;
+            gap: 15px; /* Spacing between payment method items */
+        }
+        .payment-methods-list-colored-bullets li {
+            position: relative; /* Needed for absolute positioning of the custom bullet */
+            margin-bottom: 10px; /* Space between list items */
+            padding-left: 20px; /* Creates space for the custom bullet on the left */
+            font-size: 1em; /* Default text size, adjust if needed */
+            color: #333; /* Default text color */
+            min-width: 200px; /* Ensures items wrap nicely in columns */
+        }
+        .payment-methods-list-colored-bullets li::before {
+            content: "\2022"; /* Unicode character for a solid round bullet */
+            position: absolute;
+            left: 0; /* Positions the bullet at the start of the padding-left */
+            font-size: 1.2em; /* Size of the custom bullet */
+            line-height: 1.6; /* Helps align the bullet vertically with the text */
+        }
+        /* Assigning different colors to each bullet using :nth-child() */
+        .payment-methods-list-colored-bullets li:nth-child(1)::before { color: #FF5733; } /* Orange-Red */
+        .payment-methods-list-colored-bullets li:nth-child(2)::before { color: #33FF57; } /* Green */
+        .payment-methods-list-colored-bullets li:nth-child(3)::before { color: #3357FF; } /* Blue */
+        .payment-methods-list-colored-bullets li:nth-child(4)::before { color: #FF33A1; } /* Pink */
+        .payment-methods-list-colored-bullets li:nth-child(5)::before { color: #8D33FF; } /* Purple */
+        .payment-methods-list-colored-bullets li:nth-child(6)::before { color: #33FFCE; } /* Aqua */
+        .payment-methods-list-colored-bullets li:nth-child(7)::before { color: #FFBD33; } /* Gold */
+        .payment-methods-list-colored-bullets li:nth-child(8)::before { color: #33A1FF; } /* Light Blue */
+        .payment-methods-list-colored-bullets li:nth-child(9)::before { color: #A1FF33; } /* Lime Green */
+
+        /* Shop with Confidence Section */
+        .confidence-section {
+            background-color: #e0f7fa; /* Light blue background */
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .confidence-section .button {
+            display: inline-block;
+            background-color: #6a0dad; /* Purple color from the image */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .how-it-works-step {
+                flex-basis: 100%;
+            }
+            .hero-section img {
+                display: none; /* Hide image on smaller screens if it overlaps */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="text-content">
+                <h1>Buyer Protection Programme</h1>
+                <p>The Bob Shop buyer protection programme is designed for your peace of mind.</p>
+                <p><strong>Minimum cover now doubled to R2,000</strong></p>
+            </div>
+            </div>
+
+        <div class="we-got-your-back">
+            <h2>We've got your back</h2>
+            <p>We've got you covered in the unlikely event that something goes wrong with your purchase on Bob Shop.</p>
+            <p>We will protect you if a seller does not send you the item you purchased or if the item is materially different to what was advertised.</p>
+            <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 30px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <i class="fas fa-tools" style="font-size: 50px; color: #ff6600;"></i> 
+                    <h3>It just works.</h3>
+                    <p>Successful buying and selling 24/7/365.</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <i class="fas fa-history" style="font-size: 50px; color: #ff6600;"></i> 
+                    <h3>Still partying like it's 1999...</h3>
+                    <p>Yes, we've been around that long.</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <i class="fas fa-star" style="font-size: 50px; color: #ff6600;"></i> 
+                    <h3>Rate this!</h3>
+                    <p>Our rating system helps you shop.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-it-works">
+            <h2>How it works</h2>
+            <div class="how-it-works-steps">
+                <div class="how-it-works-step">
+                    <div class="step-number">1</div>
+                    <h3>Get in touch</h3>
+                    <p>First contact the seller to resolve the issue.</p>
+                </div>
+                <div class="how-it-works-step">
+                    <div class="step-number">2</div>
+                    <h3>Not resolved?</h3>
+                    <p>If your issue is not resolved within 3 days, contact us.</p>
+                </div>
+                <div class="how-it-works-step">
+                    <div class="step-number">3</div>
+                    <h3>Your money back</h3>
+                    <p>If we can't resolve the issue, our Buyer Protection will kick in.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="what-is-covered">
+            <h2>What's covered</h2>
+            <ul class="coverage-details">
+                <li>
+                    <span>Drop & Shop</span>
+                    <span>100%</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-badge-check" style="vertical-align: middle; margin-right: 5px; color: #28a745; font-size: 16px;"></i> Verified sellers</span>
+                    <span>Up to R5,000</span>
+                </li>
+                <li>
+                    <span>Other sellers</span>
+                    <span>Up to R2,000</span>
+                </li>
+            </ul>
+
+            <h3 style="margin-top: 30px;">Stores</h3>
+            <ul class="store-coverage">
+                <li>
+                    <span>Basic</span>
+                    <span>Up to R7,500</span>
+                </li>
+                <li>
+                    <span>Advanced</span>
+                    <span>Up to R10,000</span>
+                </li>
+                <li>
+                    <span>Premium</span>
+                    <span>Up to R12,500</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="secure-payments">
+            <h2>Secure payments</h2>
+            <p>Only payments made by any of the following methods will qualify for buyer protection.</p>
+            <ul class="payment-methods-list-colored-bullets"> 
+                <li>Credit Card / Visa / Mastercard</li>
+                <li>Instant EFT</li>
+                <li>Manual EFT</li>
+                <li>Capitec Pay</li>
+                <li>Bob Bucks</li>
+                <li>Discovery Miles</li>
+                <li>Mobicred</li>
+                <li>PayFast</li>
+                <li>SnapScan</li>
+            </ul>
+        </div>
+
+        <div class="confidence-section">
+            <p>Shop with confidence</p>
+            <p>Learn more about the conditions, exclusions and the level of protection you enjoy on Bob Shop.</p>
+            <a href="land_page_index.php" class="button">Back to Marketeer</a>
+        </div>
+
+    </div>
+</body>
+</html>

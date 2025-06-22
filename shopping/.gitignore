@@ -1,0 +1,33 @@
+# Git Ignore for PHP/MySQL Projects
+
+# Vendor directories
+/vendor/
+
+# Composer generated files
+composer.lock
+
+# XAMPP/WAMP/MAMP/LAMP specific files (if any are generated in your project root)
+# Be careful with this, only if they are temporary or sensitive
+# For example, if you have a config file outside of your code base that stores sensitive data, don't commit it.
+# A common practice is to have a config.php.example and a config.php that's ignored.
+# config.php
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js (if applicable)
+/node_modules/
+
+# Environment variables files (if you use them, e.g., for database connection)
+.env
+.env.*
+
+# Temporary files or IDE-specific files
+*.tmp
+*.swp
+*.bak
+.idea/

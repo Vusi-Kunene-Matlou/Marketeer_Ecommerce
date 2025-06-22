@@ -8,7 +8,7 @@
 > A complete e-commerce solution built in PHP and MySQL featuring a **multi-vendor system** where sellers require admin approval. Hosted on InfinityFree.
 
 ## View Demo
-[🔗 View Live Demo](https://marketeer.42web.io/)
+[🔗 Marketeer](https://marketeer.42web.io/)
 
 ##  Project Overview
 
